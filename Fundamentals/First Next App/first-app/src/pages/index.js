@@ -44,7 +44,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Hello Microsoft <span>-&gt;</span>
+              Hello, Microsoft! <span>-&gt;</span>
             </h2>
             <p className={inter.className}>Hover on me xD!</p>
           </a>
