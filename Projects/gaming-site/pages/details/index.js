@@ -224,12 +224,60 @@ export default function Page() {
       </section>
 
       {/* Contact section */}
-      <div className="mt-5">
-        <h2 className="text-xl font-bold text-gray-800">Contact</h2>
-        <p className="mt-2 text-gray-600">
-          This is a temporary contact section.
-        </p>
-      </div>
+      <section className="py-2 m-0">
+        <div className="mt-5 px-10 py-10 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-black">Contact</h2>
+          <img
+            className="mx-auto my-5 rounded-lg shadow-lg"
+            src="https://fakeimg.pl/800x200?font=noto-serif"
+            alt="Placeholder"
+          />{" "}
+          <p className="mt-10 text-black">
+            Teams and players must join the official tournament support Discord
+            server.
+            <br />
+            <br />
+            Once you join, make sure to get any necessary tournament roles and
+            then use support channels for any required assistance.
+            <br />
+            <br />
+            Make sure to properly connect your discord account in order to get
+            important alerts and announcements within the server.
+          </p>
+          <div className="mx-auto my-10 p-5 bg-[#8c9efc] rounded-lg text-white shadow-lg">
+            <div className="flex justify-between items-center space-x-10">
+              <img
+                className="h-12 w-12"
+                src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/FFFFFF/external-discord-freeware-application-and-digital-video-gaming-community-logo-bold-tal-revivo.png"
+                alt="Discord Logo"
+              />
+
+              <div className="text-left flex-grow">
+                <p className="font-bold">Connect Your Discord</p>
+                <p>
+                  Once you join this tournament, our BattleBot will give you
+                  permissions on the Discord server within a few minutes.
+                </p>
+                <p className="font-bold mt-8">Join Our Server</p>
+                <p>
+                  Please connect your Discord account to RoyalBattle to
+                  automatically get the proper permissions in order to chat on
+                  this server.{" "}
+                </p>{" "}
+              </div>
+
+              <div className="flex flex-col space-y-10">
+                <button className="text-white border border-solid border-white bg-transparent py-2 px-6 rounded whitespace-nowrap">
+                  Link Account
+                </button>
+                <button className="text-white border border-solid border-white bg-transparent py-2 px-6 rounded whitespace-nowrap">
+                  Join Discord
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* <Footer /> */}
     </>
