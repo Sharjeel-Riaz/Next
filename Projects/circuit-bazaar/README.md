@@ -1,40 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CircuitBazaar
 
-## Getting Started
+CircuitBazaar, meticulously crafted with a blend of modern technologies, serves as an innovative e-commerce platform specializing in electronic gadgets and products. Developed using [Next.js](https://nextjs.org/) with [React](https://react.dev/) for robustness and scalability, CircuitBazaar seamlessly integrates with [Sanity](https://www.sanity.io/) as its backend CMS (Content Management System) and leverages [Stripe](https://stripe.com/) for secure and efficient payment processing.
 
-First, run the development server:
+![Banner]()
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- 🛒 Comprehensive Product Catalog
+- 💳 Secure Payment Processing Functionality
+- 📦 Efficient Order Management
+- 🔍 Intuitive Search and Navigation
+- 🎨 Clean and Modern UI Design
+- 🔒 Data Security and Privacy
+- ⚡ Optimized Performance
+- 🤝 Responsive Customer Support
+
+## Usage
+
+This section explains on how you can create your own local environment for
+[CircuitBazaar](https://github.com/Sharjeel-Riaz/CircuitBazaar).
+
+- First of all, what you need to do is to clone this repository [CircuitBazaar](https://github.com/Sharjeel-Riaz/CircuitBazaar)
+- Now open the terminal at the directory where you have the project and run `npm
+install` to download all the necessary dependencies.
+- Set up a sanity account if you have'nt already and create a new project.
+- Follow the [documentation](https://www.sanity.io/docs/sanity-studio) on how to
+  setup your project and its backend using sanity. You need to setup `Sanity
+Studio`. In order to set this up you must organize your project structure and
+  make proper `Schemas`.
+- Now there are some specific environment variables that you might need to fill
+  in order to run the project properly.
+- Create a `.env` file in the root directory of your project to store your
+  environment variables.
+- Now add the following:
+
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID = "In double quotes."
+NEXT_PUBLIC_SANITY_DATASET = "In double quotes."
+NEXT_PUBLIC_SANITY_TOKEN = Without double quotes
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Now you need to setup your [Stripe](https://dashboard.stripe.com/) account in
+  order to setup the payment gateway.
+- Once made, click on `Test mode` to ensure your web application is in test
+  mode. If you want to assign it a prod mode, you need to setup additional
+  security measures.
+- The next thing you need is to select the `API Keys` tab to get your
+  `Publishable key` and `Secret key`.
+- Create a file named `.env` in the root directory of the project and add the following:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = Without double quotes
+NEXT_PUBLIC_STRIPE_SECRET_KEY = Without double quotes
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Now run `npm run dev` to open the local environment.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Pro tip: In order to ensure that your application is working; You must ensure
+  that the sanity backend is properly created and all the necessary products are
+  displaying.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Feel free to use it or make any necessary modifications `:D`
 
-## Learn More
+## Production Environment
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Visit the live environment of CircuitBazaar at: [CircuitBazaar](https://circuit-bazaar.vercel.app/)
