@@ -2,7 +2,7 @@
 
 CircuitBazaar, meticulously crafted with a blend of modern technologies, serves as an innovative e-commerce platform specializing in electronic gadgets and products. Developed using [Next.js](https://nextjs.org/) with [React](https://react.dev/) for robustness and scalability, CircuitBazaar seamlessly integrates with [Sanity](https://www.sanity.io/) as its backend CMS (Content Management System) and leverages [Stripe](https://stripe.com/) for secure and efficient payment processing.
 
-![Banner]()
+![Banner](https://github.com/Sharjeel-Riaz/CircuitBazaar/blob/main/assets/banner.png?raw=true)
 
 ## Features
 
